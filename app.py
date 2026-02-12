@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-import streamlit as st
-
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(page_title="Movie Recommender", layout="wide")
@@ -60,12 +60,19 @@ def fetch_movie_details(movie_id):
     except:
         return None
 
-
 # ---------------- LOAD DATA ----------------
 movies_dict = pickle.load(open("movies_dict.pkl", "rb"))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open("similarity.pkl", "rb"))
+# ----------- CREATE SIMILARITY RUNTIME -----------
+@st.cache_data
+def create_similarity(dataframe):
+    cv = CountVectorizer(max_features=5000, stop_words="english")
+    vectors = cv.fit_transform(dataframe["tags"]).toarray()
+    similarity = cosine_similarity(vectors)
+    return similarity
+
+similarity = create_similarity(movies)
 
 # ---------------- RECOMMEND FUNCTION ----------------
 def recommend(movie_title, mood):
@@ -104,23 +111,19 @@ def recommend(movie_title, mood):
 
     return recommendations
 
-
 # ---------------- UI ----------------
 st.title("🎬 Mood-Aware Hybrid Movie Recommendation System")
 
-# Direct movie selection (NO SEARCH BAR)
 selected_movie = st.selectbox(
     "Select a movie you like",
     movies["title"].values
 )
 
-# Mood selection
 selected_mood = st.selectbox(
     "Select your mood",
     list(MOOD_GENRES.keys())
 )
 
-# Recommend
 if st.button("Recommend 🎥"):
     with st.spinner("Finding movies for you..."):
         results = recommend(selected_movie, selected_mood)
