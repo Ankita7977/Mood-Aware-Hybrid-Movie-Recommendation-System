@@ -97,7 +97,7 @@ Create a `.streamlit/secrets.toml` file and add:
 
 ```toml
 TMDB_API_KEY = "your_api_key_here"
-
+```
 ---
 
 ## ⚙️ How It Works
