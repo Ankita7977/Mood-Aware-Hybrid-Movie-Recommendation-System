@@ -142,3 +142,14 @@ TMDB_API_KEY = "your_api_key_here"
 ## 👩‍💻 Author
 Ankita Prajapati  
 Aspiring Data Scientist | Machine Learning Enthusiast
+
+---
+
+## 📸 App Preview
+
+### 🏠 Home Screen
+![Home Screen](input.png)
+
+### 🎬 Recommendation Screen
+![Recommendation](output.png)
+
