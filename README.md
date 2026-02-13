@@ -1,6 +1,7 @@
 # 🎬 Mood-Aware Hybrid Movie Recommendation System
 
 A hybrid movie recommendation system that suggests movies based on:
+
 🎥 A movie you like
 😊 Your current mood
 It combines content-based filtering with mood-based genre filtering and fetches real-time movie details using the TMDB API.
