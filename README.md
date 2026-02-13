@@ -153,3 +153,6 @@ Aspiring Data Scientist | Machine Learning Enthusiast
 ### 🎬 Recommendation Screen
 ![Recommendation](output.png)
 
+### 📄 Detailed View
+![Details](output-2.png)
+
