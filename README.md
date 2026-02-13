@@ -121,10 +121,10 @@ TMDB_API_KEY = "your_api_key_here"
 ---
 
 ## 🎯 Key Highlights
-- Hybrid recommendation approach  
-- Mood-aware personalization  
-- Real-time API integration  
-- Clean and responsive UI  
+- Hybrid recommendation approach
+- Mood-aware personalization
+- Real-time API integration
+- Clean and responsive UI
 
 ---
 
