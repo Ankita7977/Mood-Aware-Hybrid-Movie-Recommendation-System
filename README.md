@@ -57,6 +57,7 @@ This project combines:
 ---
 
 ## 📂 Project Structure
+```
 Mood-Aware-Hybrid-Movie-Recommendation-System/
 │
 ├── app.py
@@ -66,7 +67,7 @@ Mood-Aware-Hybrid-Movie-Recommendation-System/
 │
 └── .streamlit/
     └── secrets.toml
-
+```
 ---
 
 ##⚙️ Installation & Setup
