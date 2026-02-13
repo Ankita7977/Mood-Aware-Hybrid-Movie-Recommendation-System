@@ -86,7 +86,7 @@ pip install -r requirements.txt
 ### 4️⃣ Run the app
 ```bash
 streamlit run app.py
-
+```
 ---
 
 ## 🔐 Environment Variables
@@ -138,6 +138,6 @@ TMDB_API_KEY = "your_api_key_here"
 
 ---
 
-## Author
+## 👩‍💻 Author
 Ankita Prajapati  
 Aspiring Data Scientist | Machine Learning Enthusiast
