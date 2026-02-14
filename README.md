@@ -72,8 +72,8 @@ Mood-Aware-Hybrid-Movie-Recommendation-System/
 ---
 
 ##⚙️ Installation & Setup
-### 1️⃣ Clone the repository
 ```bash
+### 1️⃣ Clone the repository
 git clone https://github.com/Ankita7977/Mood-Aware-Hybrid-Movie-Recommendation-System.git
 ```
 ### 2️⃣ Navigate to the project folder
