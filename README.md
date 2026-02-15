@@ -9,8 +9,7 @@ It combines content-based filtering with mood-based genre filtering and fetches 
 ---
 
 ## 🚀 Live Demo
-[Click Here to View Live App](https://mood-aware-hybrid-movie-recommendation-system-7cgsj8nqkbp8qaec.streamlit.app/)
-
+https://mood-aware-hybrid-movie-recommendation-system-7cgsj8nqkbp8gaec.streamlit.app/
 ---
 
 ## 📌 Problem Statement
